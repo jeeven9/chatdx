@@ -33,7 +33,7 @@ export default function MobileNav() {
         </div>
         <nav className="grid gap-2 text-md font-medium">
           <Link
-            href="#"
+            href="/"
             className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 bg-muted text-foreground hover:text-foreground"
           >
             <Home className="h-5 w-5" />
@@ -54,7 +54,7 @@ export default function MobileNav() {
             Settings
           </Link>
           <Link
-            href="#"
+            href="/sign-in"
             className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
           >
             <LogIn className="h-5 w-5" />

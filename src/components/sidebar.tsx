@@ -30,7 +30,7 @@ export default function Sidebar() {
         <div className="flex-1">
           <nav className="flex flex-col px-4 text-md font-medium">
             <Link
-              href="#"
+              href="/"
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-primary bg-muted transition-all hover:text-primary"
             >
               <Home className="h-5 w-5" />
@@ -51,7 +51,7 @@ export default function Sidebar() {
               Settings
             </Link>
             <Link
-              href="#"
+              href="/sign-in"
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <LogIn className="h-5 w-5" />
