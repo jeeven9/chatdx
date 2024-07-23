@@ -12,7 +12,8 @@ export default function Chat() {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState("");
 
-  const chat = useRef<null | HTMLDivElement>(null);
+  const chat = useRef<HTMLDivElement>(null);
+  const input = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     // scroll to bottom of chat window each time chat is updated
@@ -28,6 +29,9 @@ export default function Chat() {
           chatWindow.scrollHeight - chatWindow.clientHeight;
       }
     }
+
+    // keep focus on input after chat is updated
+    input.current?.focus();
   }, [history]);
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -88,6 +92,7 @@ export default function Chat() {
             value={value}
             onChange={handleChange}
             disabled={loading}
+            ref={input}
           />
           <Button>
             {loading ? (
