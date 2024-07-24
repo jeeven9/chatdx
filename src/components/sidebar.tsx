@@ -44,7 +44,7 @@ export default function Sidebar() {
               Discover
             </Link>
             <Link
-              href="#"
+              href="/settings"
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <Settings className="h-5 w-5" />
