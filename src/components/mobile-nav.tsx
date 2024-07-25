@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -18,6 +21,8 @@ import {
 } from "lucide-react";
 
 export default function MobileNav() {
+  const pathname = usePathname();
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -34,28 +39,44 @@ export default function MobileNav() {
         <nav className="grid gap-2 text-md font-medium">
           <Link
             href="/"
-            className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 bg-muted text-foreground hover:text-foreground"
+            className={`mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 hover:text-foreground ${
+              pathname === "/"
+                ? "text-foreground bg-muted"
+                : "text-muted-foreground"
+            }`}
           >
             <Home className="h-5 w-5" />
             Home
           </Link>
           <Link
             href="/discover"
-            className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            className={`mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 hover:text-foreground ${
+              pathname === "/discover"
+                ? "text-foreground bg-muted"
+                : "text-muted-foreground"
+            }`}
           >
             <Telescope className="h-5 w-5" />
             Discover
           </Link>
           <Link
             href="/settings"
-            className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            className={`mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 hover:text-foreground ${
+              pathname === "/settings"
+                ? "text-foreground bg-muted"
+                : "text-muted-foreground"
+            }`}
           >
             <Settings className="h-5 w-5" />
             Settings
           </Link>
           <Link
             href="/sign-in"
-            className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            className={`mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 hover:text-foreground ${
+              pathname === "/sign-in"
+                ? "text-foreground bg-muted"
+                : "text-muted-foreground"
+            }`}
           >
             <LogIn className="h-5 w-5" />
             Sign In
