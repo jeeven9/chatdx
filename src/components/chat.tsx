@@ -57,7 +57,7 @@ export default function Chat() {
   }
 
   return (
-    <div className="flex flex-col w-full h-full max-h-full pt-16 pb-4 px-4 lg:pt-4 sm:max-w-3xl">
+    <div className="flex flex-col w-full h-full max-h-full sm:max-w-3xl">
       <div
         className="flex flex-col overflow-auto w-full h-full max-h-full"
         ref={chat}

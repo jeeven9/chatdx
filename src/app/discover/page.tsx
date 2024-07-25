@@ -1,6 +1,6 @@
 export default function Discover() {
   return (
-    <main className="flex justify-center w-full h-full overflow-auto">
+    <main className="flex justify-center w-full h-full max-h-full pt-14 lg:pt-0 overflow-auto">
       <div className="w-full h-full p-10 sm:max-w-3xl">
         <div className="w-full pb-6">
           <h1 className="text-3xl font-semibold">Discover</h1>
