@@ -23,9 +23,9 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden border-r bg-muted/40 lg:block">
-      <div className="flex flex-col h-full max-h-screen w-[250px] gap-2">
-        <div className="flex flex-row justify-between items-center border-b h-[60px] px-6">
+    <aside className="hidden border-r max-h-screen bg-muted/40 lg:block">
+      <div className="flex flex-col h-full max-h-screen w-[250px] overflow-y-scroll gap-2">
+        <div className="flex flex-row justify-between items-center border-b h-[60px] min-h-[60px] px-6">
           <div className="flex items-center gap-2">
             <BotMessageSquare className="h-6 w-6" />
             <span className="text-md font-semibold">ChatDx</span>

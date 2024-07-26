@@ -5,7 +5,7 @@ export default function Discover() {
         <div className="w-full pb-6">
           <h1 className="text-3xl font-semibold">Discover</h1>
         </div>
-        <div className="flex flex-col gap-6 text-lg">
+        <div className="flex flex-col gap-6 text-lg pb-4">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
             libero at sapien pretium accumsan. Vestibulum sed mi nisl. Morbi sed

@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label";
 
 export default function SignIn() {
   return (
-    <main className="flex justify-center items-center w-full h-full max-h-full pt-14 lg:pt-0">
+    <main className="flex justify-center items-center w-full h-full max-h-full overflow-auto pt-14 lg:pt-0">
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>

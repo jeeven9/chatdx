@@ -31,7 +31,10 @@ export default function MobileNav() {
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="flex flex-col w-[280px]">
+      <SheetContent
+        side="left"
+        className="flex flex-col w-[280px] overflow-y-scroll"
+      >
         <div className="flex flex-row items-center gap-2">
           <BotMessageSquare className="h-6 w-6" />
           <span className="text-md font-semibold">ChatDx</span>

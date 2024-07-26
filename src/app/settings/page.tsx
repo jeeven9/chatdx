@@ -23,7 +23,7 @@ export default function Settings() {
         <div className="w-full pb-6">
           <h1 className="text-3xl font-semibold">Settings</h1>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 pb-4">
           <Card>
             <CardHeader>
               <CardTitle>Sources</CardTitle>
