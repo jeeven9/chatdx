@@ -1,11 +1,11 @@
 export default function Discover() {
   return (
-    <main className="flex justify-center w-full h-full max-h-full pt-14 lg:pt-0 overflow-auto">
-      <div className="w-full h-full p-10 sm:max-w-3xl">
+    <main className="flex justify-center w-full h-full max-h-full overflow-auto">
+      <div className="w-full h-full p-6 sm:max-w-3xl">
         <div className="w-full pb-6">
           <h1 className="text-3xl font-semibold">Discover</h1>
         </div>
-        <div className="flex flex-col gap-6 text-lg pb-4">
+        <div className="flex flex-col gap-6 text-lg pb-6">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
             libero at sapien pretium accumsan. Vestibulum sed mi nisl. Morbi sed

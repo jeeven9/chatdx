@@ -28,7 +28,7 @@ export default function RootLayout({
         >
           <div className="flex flex-col h-screen w-screen lg:flex-row">
             <Sidebar />
-            <div className="flex flex-row absolute top-0 justify-between items-center h-14 w-full p-1 border-b bg-muted/40 lg:hidden">
+            <div className="flex flex-row justify-between items-center h-14 w-full p-1 border-b bg-muted/40 lg:hidden">
               <MobileNav />
               <div className="flex flex-row items-center gap-2">
                 <BotMessageSquare className="h-6 w-6" />
