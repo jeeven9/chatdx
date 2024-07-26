@@ -40,6 +40,10 @@ export default function Chat() {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    // do nothing if input is empty
+    if (!value) return;
+
     const query = value;
     setValue("");
     setLoading(true);
