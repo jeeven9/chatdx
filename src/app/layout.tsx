@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-import { ModeToggle } from "@/components/ui/mode-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
 import Sidebar from "@/components/sidebar";
 import MobileNav from "@/components/mobile-nav";
+import ThemeToggle from "@/components/ui/theme-toggle";
 import { BotMessageSquare } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
                 <BotMessageSquare className="h-6 w-6" />
                 <span className="text-md font-semibold">ChatDx</span>
               </div>
-              <ModeToggle />
+              <ThemeToggle />
             </div>
             {children}
           </div>

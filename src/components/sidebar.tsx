@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./ui/mode-toggle";
+import ThemeToggle from "./ui/theme-toggle";
 import {
   Card,
   CardContent,
@@ -30,7 +30,7 @@ export default function Sidebar() {
             <BotMessageSquare className="h-6 w-6" />
             <span className="text-md font-semibold">ChatDx</span>
           </div>
-          <ModeToggle />
+          <ThemeToggle />
         </div>
         <div className="flex-1">
           <nav className="flex flex-col px-4 text-md font-medium">
